@@ -34,18 +34,18 @@ long getCompanyIdByShardName(String shardName){
 List<String> toCreate = new ArrayList<String>();
 
 /* PATH A LA DOCUMENT LIBRARY*/
-String cleanDLRootPath = "/Proyectos/vass-telefonica-tienda/staging-test/liferay-portal-6.2-ee-sp5/data/document_library";
+String cleanDLRootPath = "/XXXXXXXXXXXX/staging-test/liferay-portal-6.2-ee-sp5/data/document_library";
 
 /* Default files */
-String defaultPNG = "/Proyectos/vass-telefonica-tienda/staging-test/default.png";
-String defaultJPG = "/Proyectos/vass-telefonica-tienda/staging-test/default.jpg";
-String defaultGIF = "/Proyectos/vass-telefonica-tienda/staging-test/default.gif";
-String defaultCSS = "/Proyectos/vass-telefonica-tienda/staging-test/default.css";
-String defaultJS = "/Proyectos/vass-telefonica-tienda/staging-test/default.js";
-String defaultZIP = "/Proyectos/vass-telefonica-tienda/staging-test/default.zip";
-String defaultLAR = "/Proyectos/vass-telefonica-tienda/staging-test/default.lar";
-String defaultSWF = "/Proyectos/vass-telefonica-tienda/staging-test/default.swf";
-String defaultPDF = "/Proyectos/vass-telefonica-tienda/staging-test/default.pdf";
+String defaultPNG = "/XXXXXXXXXXXX/staging-test/default.png";
+String defaultJPG = "/XXXXXXXXXXXX/staging-test/default.jpg";
+String defaultGIF = "/XXXXXXXXXXXX/staging-test/default.gif";
+String defaultCSS = "/XXXXXXXXXXXX/staging-test/default.css";
+String defaultJS = "/XXXXXXXXXXXX/staging-test/default.js";
+String defaultZIP = "/XXXXXXXXXXXX/staging-test/default.zip";
+String defaultLAR = "/XXXXXXXXXXXX/staging-test/default.lar";
+String defaultSWF = "/XXXXXXXXXXXX/staging-test/default.swf";
+String defaultPDF = "/XXXXXXXXXXXX/staging-test/default.pdf";
 
 /* OS version */
 String osName = System.getProperty("os.name").toLowerCase();
