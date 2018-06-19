@@ -1,0 +1,18 @@
+import com.liferay.document.library.kernel.service.*
+import com.liferay.document.library.kernel.util.*;
+import com.liferay.portlet.documentlibrary.model.*
+import com.liferay.portal.kernel.dao.orm.*
+
+try{
+	groupId = 220568
+	allFiles = DLAppServiceUtil.getGroupFileEntries(groupId, 0, QueryUtil.ALL_POS, QueryUtil.ALL_POS)
+	println('groupId='+groupId+'-'+QueryUtil.ALL_POS+'-'+QueryUtil.ALL_POS+' mountFolders'+allFiles)
+	for(ii=0;ii<allFiles.size();ii++){
+		file = allFiles.get(ii)
+		fileVersion = file.getFileVersion()
+		println('file='+file.getTitle()+' fileVersion='+fileVersion.getTitle()+' verion='+fileVersion.getVersion())
+                ImageProcessorUtil.hasImages(fileVersion)
+	}
+}catch ( e ){
+	println('Exception='+e)
+}
